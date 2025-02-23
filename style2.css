@@ -1,0 +1,300 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+body,
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+/* header section */
+.background {
+	background: url("./assets/bg2.jpg") no-repeat center center;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	color: white;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.content {
+	position: relative;
+	z-index: 2;
+}
+.icon {
+	width: 30px;
+	height: 30px;
+}
+
+.border-container {
+	text-align: center;
+	display: flex;
+	gap: 10px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	bottom: 90px;
+}
+
+.highlight-border {
+	width: 40px;
+	height: 3px;
+	background-color: #b8b8b8;
+}
+
+.highlight-border.active {
+	background-color: #ffffff;
+}
+
+.highlight-border.active p {
+	margin-top: -45px;
+	color: #ffffff;
+	margin-left: -20px;
+}
+
+.custom-logo {
+	width: 70%;
+}
+
+.custom-border {
+	margin-top: 200px;
+	position: relative;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(to right, #fff 50%, transparent 50%);
+}
+
+.custom-border::before {
+	content: "";
+	position: absolute;
+	top: 1px;
+	width: 100%;
+	height: 1px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* mirae asset section */
+.ma-section {
+	padding: 100px 0px;
+}
+
+.ma-section .section-title {
+	color: #00427a;
+}
+
+.ma-section .info-item {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #004a8d;
+}
+.ma-section .info-label {
+	color: #f57c00;
+	font-weight: bold;
+}
+
+.ma-section .highlight-border.active {
+	background-color: #004a8d;
+}
+
+.ma-section .highlight-border.active p {
+	margin-top: -45px;
+	color: #004a8d;
+	margin-left: -20px;
+}
+
+/* convenience section */
+.convenience {
+	background-color: #242424;
+}
+
+.convenience .card-text {
+	color: #7d7d7d;
+}
+
+.convenience a {
+	text-decoration: none;
+}
+
+.convenience a:hover .card-title {
+	color: #ff8c00;
+}
+
+.card-img-top {
+	height: 300px;
+	object-fit: cover;
+}
+
+.convenience-border {
+	margin-top: 40px;
+	position: relative;
+	width: 100%;
+	height: 3px;
+}
+
+.convenience a:hover .convenience-border {
+	background: linear-gradient(to right, #ff8c00 50%, transparent 50%);
+}
+
+.convenience-border::before {
+	content: "";
+	position: absolute;
+	top: 1px;
+	width: 100%;
+	height: 1px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* only section */
+.convenience.only-section a {
+	transition: all 0.3s ease;
+}
+
+.convenience.only-section a:hover {
+	transform: translateY(-15px);
+}
+
+.convenience.only-section a:hover .card-text,
+.convenience.only-section a:hover .card-title {
+	color: #fff;
+}
+
+/* mirae-asset-container */
+.mirae-asset-container {
+	background-image: url("./assets/mirae-asset-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	position: relative;
+}
+.centered-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+	font-size: 6rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* avenew section */
+.avenew-container {
+	background-color: #242424;
+	padding: 100px 0px;
+}
+.avenew-border {
+	position: relative;
+	padding: 0 40px;
+}
+
+.avenew-border::before,
+.avenew-border::after {
+	content: "";
+	position: absolute;
+	top: 75%;
+	transform: translateY(-50%);
+	width: 33vw;
+	height: 27px;
+	background-size: cover;
+}
+
+.avenew-border::before {
+	left: 0;
+	background-image: url("./assets/leftborder.svg");
+}
+
+.avenew-border::after {
+	right: 0;
+	background-image: url("./assets/rightborder.svg");
+}
+
+.slick-slide img {
+	width: 250px;
+	height: 350px;
+	object-fit: cover;
+	object-position: top;
+	transition: all 0.5s;
+}
+
+.slick-slide {
+	transition: all 0.5s;
+	margin: 0 10px;
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+}
+
+.slick-track {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slick-center img {
+	transform: scale(1.2);
+	opacity: 1 !important;
+	width: 280px;
+	height: 400px;
+}
+
+.slick-list {
+	margin: 0 -10px; /* Account for slide gap */
+}
+
+.custom-border-avenue {
+	margin-top: 40px;
+	position: relative;
+	width: 100%;
+	height: 5px;
+	background: linear-gradient(to right, #f58220 50%, #00427a 50%);
+}
+
+.image-container {
+	position: relative;
+	display: inline-block; /* Ensures the container wraps around the image */
+}
+
+.image-container::after {
+	content: "";
+	display: block;
+	width: 100%; /* Matches the width of the image */
+	height: 4px; /* Adjust the height of the border as needed */
+	background-color: #ff8c00; /* Border color */
+	position: absolute;
+	bottom: -10px; /* Adjust the distance from the image */
+	left: 0;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.custom-logo {
+		width: auto;
+	}
+
+	.convenience {
+		padding: 100px 0px;
+	}
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
