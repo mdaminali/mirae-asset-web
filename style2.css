@@ -108,170 +108,104 @@ html {
 	margin-left: -20px;
 }
 
-/* convenience section */
-.convenience {
-	background-color: #242424;
-}
-
-.convenience .card-text {
-	color: #7d7d7d;
-}
-
-.convenience a {
-	text-decoration: none;
-}
-
-.convenience a:hover .card-title {
-	color: #ff8c00;
-}
-
-.card-img-top {
-	height: 300px;
-	object-fit: cover;
-}
-
-.convenience-border {
-	margin-top: 40px;
+.title-container {
 	position: relative;
-	width: 100%;
-	height: 3px;
-}
-
-.convenience a:hover .convenience-border {
-	background: linear-gradient(to right, #ff8c00 50%, transparent 50%);
-}
-
-.convenience-border::before {
-	content: "";
-	position: absolute;
-	top: 1px;
-	width: 100%;
-	height: 1px;
-	background-color: rgba(255, 255, 255, 0.5);
-}
-
-/* only section */
-.convenience.only-section a {
-	transition: all 0.3s ease;
-}
-
-.convenience.only-section a:hover {
-	transform: translateY(-15px);
-}
-
-.convenience.only-section a:hover .card-text,
-.convenience.only-section a:hover .card-title {
-	color: #fff;
-}
-
-/* mirae-asset-container */
-.mirae-asset-container {
-	background-image: url("./assets/mirae-asset-bg.jpg");
-	background-size: cover;
-	background-position: center;
-	height: 100vh;
-	position: relative;
-}
-.centered-text {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: white;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-	font-size: 6rem;
-	font-weight: bold;
 	text-align: center;
 }
 
-/* avenew section */
-.avenew-container {
-	background-color: #242424;
+.title {
+	font-size: 19rem;
+	font-weight: bold;
+	color: #333;
+	margin: 0;
+	position: relative;
+}
+
+.title-shadow {
+	position: absolute;
+	bottom: -90;
+	left: -65px;
+	color: rgba(172, 196, 216, 0.4);
+	z-index: -1;
+}
+
+/* awards section */
+.awards {
 	padding: 100px 0px;
 }
-.avenew-border {
-	position: relative;
-	padding: 0 40px;
-}
 
-.avenew-border::before,
-.avenew-border::after {
-	content: "";
-	position: absolute;
-	top: 75%;
-	transform: translateY(-50%);
-	width: 33vw;
-	height: 27px;
+.awards .overlay {
+	background-image: url("./assets/award.jpg"); /* Replace with your image path */
 	background-size: cover;
+	background-position: center;
+	height: 100%;
+	color: white;
+	padding: 20px;
+	filter: grayscale(100%);
+	opacity: 0.5;
 }
-
-.avenew-border::before {
-	left: 0;
-	background-image: url("./assets/leftborder.svg");
+.awards .title {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #004a8d;
 }
-
-.avenew-border::after {
-	right: 0;
-	background-image: url("./assets/rightborder.svg");
+.awards h1,
+.awards p {
+	color: rgba(44, 44, 44, 1);
 }
-
-.slick-slide img {
-	width: 250px;
-	height: 350px;
+.awards .content {
+	padding: 20px;
+}
+.awards .card {
+	border: none;
+	border-radius: 0px;
+	margin: 10px;
+	transition: transform 0.3s ease;
+	background-color: transparent;
+}
+.awards .card:hover {
+	transform: scale(1.05); /* Slight zoom effect on hover */
+}
+.awards .card-img-top {
+	height: 200px;
 	object-fit: cover;
-	object-position: top;
-	transition: all 0.5s;
+	border-radius: 0px;
+}
+.awards .card-body {
+	padding: 20px;
+}
+.awards .card-title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.awards .card-text {
+	font-size: 0.9rem;
+	color: #555;
 }
 
-.slick-slide {
-	transition: all 0.5s;
-	margin: 0 10px;
-	display: flex !important;
-	justify-content: center;
-	align-items: center;
+.awards .border-container {
+	bottom: 30px;
+}
+/* blog section */
+.core-value {
+	padding: 100px 0px;
+}
+.core-value .img-container {
+	height: 70vh;
 }
 
-.slick-track {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.core-value .border-container {
+	margin-top: 50px;
 }
 
-.slick-center img {
-	transform: scale(1.2);
-	opacity: 1 !important;
-	width: 280px;
-	height: 400px;
+.core-value .highlight-border.active p {
+	color: #004a8d;
 }
-
-.slick-list {
-	margin: 0 -10px; /* Account for slide gap */
+.core-value .highlight-border.active {
+	background-color: #004a8d;
 }
-
-.custom-border-avenue {
-	margin-top: 40px;
-	position: relative;
-	width: 100%;
-	height: 5px;
-	background: linear-gradient(to right, #f58220 50%, #00427a 50%);
-}
-
-.image-container {
-	position: relative;
-	display: inline-block; /* Ensures the container wraps around the image */
-}
-
-.image-container::after {
-	content: "";
-	display: block;
-	width: 100%; /* Matches the width of the image */
-	height: 4px; /* Adjust the height of the border as needed */
-	background-color: #ff8c00; /* Border color */
-	position: absolute;
-	bottom: -10px; /* Adjust the distance from the image */
-	left: 0;
-}
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }
